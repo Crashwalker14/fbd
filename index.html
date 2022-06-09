@@ -5,11 +5,68 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <meta name="viewport" content="width=device-with, initial-scale=1">
-        <title>Birthday's tracker | Family</title> 
+    
+    <title>Family Event | Diaries</title> 
 </head>
 
 <body>
-    <h1 class="text-center">Birthday Diaries</h1>
+<!-- Header -->
+    <div class="header" id="myHeader">
+        <h2>Family Event Diaries</h2>
+    </div>
+<!-- header style -->
+    <style>
+        body {
+          text-align: center;
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .top-container {
+          background-color: #f1f1f1;
+          padding: 30px;
+          text-align: center;
+        }
+        
+        .header {
+          padding: 10px 16px;
+          background: #555;
+          color: #f1f1f1;
+        }
+        
+        .content {
+          padding: 16px;
+        }
+        
+        .sticky {
+          position: fixed;
+          top: 0;
+          width: 100%;
+        }
+        
+        .sticky + .content {
+          padding-top: 102px;
+        }
+        </style>
+<!-- header js -->
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+        </script>
+
+    <!-- body -->
+    
+ 
     <!-- Table Data -->
     <div class="container">
         <hr>
@@ -253,8 +310,8 @@
 
         }
     </script>
-    
-    <footer>
+
+<footer>
 
     <footer class="bg-dark text-center text-white">
     <!-- Grid container -->
@@ -304,4 +361,5 @@
   </footer>
     
 </body>
+
 </html>
