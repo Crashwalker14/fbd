@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 class="text-center">Birthday Diaries</h1>
+    <!-- Table Data -->
+    <div class="container">
+        <hr>
+        <input type="text" id="myInput" onkeyup='tableSearch()' placeholder="Search Name">
+
+        <table class="table" id="myTable" data-filter-control="true" data-show-search-clear-button="true">
+            <tr>
+                <th>Month</th>
+                <th>Name</th>
+                <th>Date</th>
+                <th>Event</th>
+            </tr>
+            <tr>
+                <td>January</td>
+                <td>Atik & Parveen</td>
+                <td>8th January</td>
+                <td>Wedding</td>
+            </tr>
+            <tr>
+                <td>January</td>
+                <td>Rehana</td>
+                <td>8th January</td>
+                <td>Birthday</td>
+            </tr>
+            <tr>
+                <td>January</td>
+                <td>Atik</td>
+                <td>21st January</td>
+                <td>Birthday</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>Nana</td>
+                <td>10th February</td>
+                <td>Birthday</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>Fardeen</td>
+                <td>16th February</td>
+                <td>Birthday</td>
+            </tr>
+            <tr>
+                <td>March</td>
+                <td>Raees & Choti</td>
+                <td>5th March</td>
+                <td>Wedding</td>
+            </tr>
+            <tr>
+                <td>March</td>
+                <td>Shabina</td>
+                <td>5th March</td>
+                <td>Birthday</td>
+            </tr>
+            <tr>
+                <td>March</td>
+                <td>Parveen</td>
+                <td>30th March</td>
+                <td>Birthday</td>
+            </tr>
+            <tr>
+                <td>April</td>
+                <td>Ayesha</td>
+                <td>8th April</td>
+                <td>Birthday</td>
+            </tr>
+            <tr>
+                <td>April</td>
+                <td>Ashraf & Sheza</td>
+                <td>11th April</td>
+                <td>Birthday</td>
+            </tr>
+            <tr>
+                <td>April</td>
+                <td>Ameera</td>
+                <td>15th April</td>
+                <td>Birthday</td>
+            </tr>
+            <tr>
+                <td>April</td>
+                <td>Nasreen</td>
+                <td>29th April</td>
+                <td>Birthday</td>
+            </tr>
+            <tr>
+                <td>April</td>
+                <td>Rafik</td>
+                <td>30th April</td>
+                <td>Birthday</td>
+            </tr>
+            <tr>
+                <td>May</td>
+                <td>Adnan</td>
+                <td>14th May</td>
+                <td>Birthday</td>
+            </tr>
+            <tr>
+                <td>May</td>
+                <td>Shafik & Nasreen</td>
+                <td>19th May</td>
+                <td>Wedding</td>
+            </tr>
+            <tr>
+                <td>May</td>
+                <td>Shafik</td>
+                <td>26th May</td>
+                <td>Birthday</td>
+            </tr>
+            <tr>
+                <td>June</td>
+                <td>Momina</td>
+                <td>12th June</td>
+                <td>Birthday</td>
+            </tr>
+            <tr>
+                <td>July</td>
+                <td>Saira</td>
+                <td>4th July</td>
+                <td>Birthday</td>
+            </tr>
+            <tr>
+                <td>July</td>
+                <td>Choti</td>
+                <td>9th July</td>
+                <td>Birthday</td>
+            </tr>
+            <tr>
+                <td>July</td>
+                <td>Shakil</td>
+                <td>24th July</td>
+                <td>Birthday</td>
+            </tr>
+            <tr>
+                <td>August</td>
+                <td>Aqsa</td>
+                <td>4th August</td>
+                <td>Birthday</td>
+            </tr>
+            <tr>
+                <td>August</td>
+                <td>Rafik & Amina</td>
+                <td>7th August</td>
+                <td>Wedding</td>
+            </tr>
+            <tr>
+                <td>August</td>
+                <td>Rukshana & Zakir</td>
+                <td>8th August</td>
+                <td>Wedding</td>
+            </tr>
+            <tr>
+                <td>August</td>
+                <td>Saima</td>
+                <td>24th August</td>
+                <td>Birthday</td>
+            </tr>
+            <tr>
+                <td>September</td>
+                <td>Rukshana</td>
+                <td>21st September</td>
+                <td>Birthday</td>
+            </tr>
+            <tr>
+                <td>September</td>
+                <td>Amina</td>
+                <td>23rd September</td>
+                <td>Birthday</td>
+            </tr>
+            <tr>
+                <td>September</td>
+                <td>Namra</td>
+                <td>25th September</td>
+                <td>Birthday</td>
+            </tr>
+            <tr>
+                <td>October</td>
+                <td>Shehzad</td>
+                <td>3rd October</td>
+                <td>Birthday</td>
+            </tr>
+            <tr>
+                <td>October</td>
+                <td>Rizwan</td>
+                <td>15th October</td>
+                <td>Birthday</td>
+            </tr>
+            <tr>
+                <td>November</td>
+                <td>Nabila</td>
+                <td>17th November</td>
+                <td>Birthday</td>
+            </tr>
+            <tr>
+                <td>November</td>
+                <td>Shakil & Momina</td>
+                <td>21st November</td>
+                <td>Wedding</td>
+            </tr>
+            <tr>
+                <td>December</td>
+                <td>Raees</td>
+                <td>1st December</td>
+                <td>Birthday</td>
+            </tr>
+            <tr>
+                <td>December</td>
+                <td>Nani(Noorjahan)</td>
+                <td>23rd December</td>
+                <td>Death</td>
+            </tr>
+            <tr>
+                <td>December</td>
+                <td>Nani(Noorjahan)</td>
+                <td>30th December</td>
+                <td>Birthday</td>
+            </tr>
+        </table>
+    </div>
+
+    <script type="application/javascript">
+        function tableSearch() {
+            let input, filter, table, tr, td, txtValue;
+
+            //Intialising Variables
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+
+            for (let i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[1];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+
+        }
+    </script>
+</body>
+
+<footer></footer>
+
+</html>
